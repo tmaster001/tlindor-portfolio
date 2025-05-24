@@ -1,0 +1,46 @@
+{
+  "name": "Alex Developer",
+  "title": "Full Stack Software Developer",
+  "bio": "Passionate about building scalable web applications and delightful user experiences. Experienced in Python, JavaScript, and cloud technologies.",
+  "skills": ["Flask", "React", "PostgreSQL", "Node.js", "Express", "MongoDB"],
+  "projects": [
+    {
+      "name": "Project Alpha",
+      "description": "A web platform for collaborative note-taking.",
+      "url": "https://github.com/yourusername/project-alpha",
+      "tech_stack": ["Flask", "React", "PostgreSQL"],
+      "screenshot": "static/screenshots/project-alpha.png",
+      "demo_url": "https://project-alpha-demo.example.com"
+    },
+    {
+      "name": "DevConnector",
+      "description": "A social network for developers.",
+      "url": "https://github.com/yourusername/devconnector",
+      "tech_stack": ["Node.js", "Express", "MongoDB", "React"],
+      "screenshot": "static/screenshots/devconnector.png",
+      "demo_url": "https://devconnector-demo.example.com"
+    }
+  ],
+  "contact": {
+    "email": "alex.developer@email.com"
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/alexdeveloper",
+      "icon": "bi-linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/yourusername",
+      "icon": "bi-github"
+    }
+  ],
+  "color_scheme": {
+    "primary": "#2d72d9",
+    "secondary": "#e3eafc",
+    "background": "#f8fafc",
+    "text": "#222",
+    "accent": "#fff"
+  }
+}
