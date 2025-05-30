@@ -39,7 +39,7 @@ def load_profile_data(filepath):
 # Define the main route for the website
 @app.route("/")
 def home():
-    # Figure out where the data.json file is
+    # Figure out the location of the data.json file
     data_path = os.path.join(os.path.dirname(__file__), "data.json")
     # Load the profile data from the file
     profile = load_profile_data(data_path)
