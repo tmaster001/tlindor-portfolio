@@ -5,7 +5,7 @@
   "skills": ["Flask", "React", "PostgreSQL", "Node.js", "Express", "MongoDB"],
   "projects": [
     {
-      "name": "Project Alpha",
+      "name": "Note Taker",
       "description": "A web platform for collaborative note-taking.",
       "url": "https://github.com/yourusername/project-alpha",
       "tech_stack": ["Flask", "React", "PostgreSQL"],
@@ -13,8 +13,16 @@
       "demo_url": "https://project-alpha-demo.example.com"
     },
     {
-      "name": "DevConnector",
-      "description": "A social network for developers.",
+      "name": "Social Media Dupe",
+      "description": "A personal project mimicking popular social media sites.",
+      "url": "https://github.com/yourusername/devconnector",
+      "tech_stack": ["Node.js", "Express", "MongoDB", "React"],
+      "screenshot": "static/screenshots/devconnector.png",
+      "demo_url": "https://devconnector-demo.example.com"
+    },
+    {
+      "name": "Web Development Capstone Project",
+      "description": "Final project for web development course.",
       "url": "https://github.com/yourusername/devconnector",
       "tech_stack": ["Node.js", "Express", "MongoDB", "React"],
       "screenshot": "static/screenshots/devconnector.png",
