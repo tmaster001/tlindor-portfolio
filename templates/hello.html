@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" style="background: var(--accent); box-shadow: 0 1px 8px rgba(0,0,0,0.04);">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand text-primary" href="#about">{{ profile.name }}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,11 +31,11 @@
     </nav>
 
     <!-- About Section -->
-    <section class="section text-center fade-section" id="about" style="padding-top:168px;">
+    <section class="section text-center fade-section" id="about">
         <div class="container">
-            <h1 class="fw-bold text-primary mb-3" style="font-size:2.2rem;">{{ profile.name }}</h1>
-            <div class="text-muted mb-4" style="font-size:1.2rem;">{{ profile.title }}</div>
-            <p class="mx-auto mb-0" style="max-width: 540px; font-size:1.1rem;">{{ profile.bio }}</p>
+            <h1 class="fw-bold text-primary mb-3">{{ profile.name }}</h1>
+            <div class="text-muted mb-4">{{ profile.title }}</div>
+            <p class="mx-auto mb-0">{{ profile.bio }}</p>
         </div>
     </section>
 
@@ -112,7 +112,7 @@
     <section class="section bg-white fade-section" id="contact">
         <div class="container text-center">
             <div class="section-title"><i class="bi bi-envelope"></i> Contact</div>
-            <div class="d-flex flex-wrap justify-content-center gap-3" style="margin-top:2.5rem;">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
                 <a href="mailto:{{ profile.contact.email }}" class="btn btn-outline-primary contact-btn">
                     <i class="bi bi-envelope-fill me-1"></i>Email
                 </a>

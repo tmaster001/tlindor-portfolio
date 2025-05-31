@@ -13,9 +13,9 @@ body {
     letter-spacing: 0.01em;
 }
 .navbar {
-    background: transparent;
+    background: var(--accent); /* moved from inline style */
+    box-shadow: 0 1px 8px rgba(0,0,0,0.04); /* moved from inline style */
     border-bottom: none;
-    box-shadow: none;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -147,6 +147,27 @@ body {
 .d-flex.gap-3 {
     gap: 2.5rem !important;
 }
+#about {
+    padding-top: 168px; /* moved from inline style */
+}
+
+.fw-bold.text-primary.mb-3 {
+    font-size: 2.2rem; /* moved from inline style */
+}
+
+.text-muted.mb-4 {
+    font-size: 1.2rem; /* moved from inline style */
+}
+
+.mx-auto.mb-0 {
+    max-width: 540px; /* moved from inline style */
+    font-size: 1.1rem; /* moved from inline style */
+}
+
+.d-flex.flex-wrap.justify-content-center.gap-3 {
+    margin-top: 2.5rem; /* moved from inline style */
+}
+
 @media (max-width: 600px) {
     .section { padding: 48px 0 48px 0; }
     .avatar { width: 64px; height: 64px; }
