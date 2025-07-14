@@ -34,5 +34,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
         });
-    });
-});
+        // Dark mode toggle logic
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            if (darkModeToggle) {
+                darkModeToggle.addEventListener('click', () => {
+                    document.body.classList.toggle('dark-mode');
+                });
+            }
+        });
+    }); // <-- closes filterBtns.forEach callback
+
+}); // <-- closes main DOMContentLoaded event listener

@@ -5,6 +5,12 @@
     --text: #222;
     --accent: #fff;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212; /* dark bg */
+    --text: #f1f1f1;       /* light text */
+  }
+}
 html { scroll-behavior: smooth; }
 body {
     background: var(--background);
@@ -172,4 +178,24 @@ body {
     .section { padding: 48px 0 48px 0; }
     .avatar { width: 64px; height: 64px; }
     .project-card { padding: 1.2rem 0.7rem; }
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  top: 4.8rem; /* Adjusted to align with the navbar's bottom */
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  z-index: 9999;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  background-color: var(--secondary);
 }
