@@ -199,3 +199,29 @@ body {
 #dark-mode-toggle:hover {
   background-color: var(--secondary);
 }
+
+.time-greeting-widget {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: fit-content;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  z-index: 1000;
+}
+
+#current-time {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+#greeting {
+  font-size: 2rem;
+}
+
+body {
+  padding-top: 100px;
+}

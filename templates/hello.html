@@ -13,6 +13,13 @@
 
 <body>
     <button id="dark-mode-toggle">Dark Mode</button>
+    <header>
+  <!-- This shows the greeting and clock -->
+  <div class="time-greeting-widget">
+    <h2 id="greeting">Hello!</h2>
+    <p id="current-time">Loading time...</p>
+  </div>
+</header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -234,4 +241,33 @@
     
     <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
+<script>
+function updateTimeAndGreeting() {
+  const timeElement = document.getElementById("current-time");
+  const greetingElement = document.getElementById("greeting");
+  const now = new Date();
+
+  // Format time
+  const hours = now.getHours();
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+  timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+
+  // Set greeting
+  let greeting = "";
+  if (hours < 12) {
+    greeting = "Good Morning ☀️";
+  } else if (hours < 18) {
+    greeting = "Good Afternoon 🌤️";
+  } else {
+    greeting = "Good Evening 🌙";
+  }
+  greetingElement.textContent = greeting;
+}
+
+// Run once and then every second
+updateTimeAndGreeting();
+setInterval(updateTimeAndGreeting, 1000);
+</script>
+
 </html>
