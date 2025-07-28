@@ -251,11 +251,13 @@ body {
   border-radius: 1rem;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  width: 100%;
-  max-width: 300px;
+  width: 220px;
+  max-width: 90vw;
   transition: transform 0.3s ease;
   text-align: center;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .badge:hover {
@@ -263,7 +265,7 @@ body {
 }
 
 .badge img {
-  width: 100px;
+  width: 80px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -272,11 +274,10 @@ body {
   font-weight: bold;
   color: #111827;
   margin-bottom: 0.5rem;
-  word-wrap: break-word;
 }
 
 .badge a {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #3b82f6;
   text-decoration: none;
 }
@@ -285,4 +286,19 @@ body {
   text-decoration: underline;
 }
 
+/* Responsive behavior for smaller screens */
+@media (max-width: 480px) {
+  .badge {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .badge img {
+    width: 60px;
+  }
+
+  .certifications h2 {
+    font-size: 1.5rem;
+  }
+}
 
