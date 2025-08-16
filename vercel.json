@@ -7,6 +7,10 @@
   ],
   "routes": [
     {
+      "src": "/certificates/(.*)",
+      "dest": "/certificates/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "app.py"
     }
