@@ -52,3 +52,80 @@
     "accent": "#fff"
   }
 }
+
+{
+  "certificates": [
+    {
+      "title": "AWS Academy Cloud Foundations",
+      "issuer": "AWS Academy",
+      "date": "2025-08",
+      "file": "aws_cloud_foundations.pdf"
+    },
+    {
+      "title": "AWS Academy Data Engineering",
+      "issuer": "AWS Academy",
+      "date": "2025-08",
+      "file": "aws_data_engineering.pdf"
+    },
+    {
+      "title": "Getting Started with MongoDB Atlas",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_getting_started_atlas.pdf"
+    },
+    {
+      "title": "Connecting to a MongoDB Database",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_connecting_to_db.pdf"
+    },
+    {
+      "title": "The MongoDB Shell",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_shell.pdf"
+    },
+    {
+      "title": "Self-Managed Server Administration",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_self_managed_admin.pdf"
+    },
+    {
+      "title": "MongoDB and the Document Model",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_document_model.pdf"
+    },
+    {
+      "title": "MongoDB CRUD: Insert and Find",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_crud_insert_find.pdf"
+    },
+    {
+      "title": "MongoDB CRUD: Modifying Query Results",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_crud_modify_results.pdf"
+    },
+    {
+      "title": "MongoDB CRUD: Replace and Delete",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_crud_replace_delete.pdf"
+    },
+    {
+      "title": "MongoDB Data Modeling Intro",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_data_modeling_intro.pdf"
+    },
+    {
+      "title": "MongoDB Indexes",
+      "issuer": "MongoDB University",
+      "date": "2025-07",
+      "file": "mongodb_indexes.pdf"
+    }
+  ]
+}

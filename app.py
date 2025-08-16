@@ -51,3 +51,19 @@ def home():
 # If this file is run directly, start the Flask web server
 if __name__ == "__main__":
     app.run(debug=True)
+
+    from flask import Flask, render_template, url_for
+import json, os
+
+app = Flask(__name__)
+
+with open("data.json", "r", encoding="utf-8") as f:
+    DATA = json.load(f)
+
+@app.route("/")
+def home():
+    return render_template(
+        "hello.html",
+        certificates=DATA.get("certificates", []),
+        # ... pass other data you already use (projects, etc.)
+    )
