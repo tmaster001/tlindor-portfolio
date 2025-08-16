@@ -227,4 +227,24 @@ body {
 }
 
 
+#certificates {
+  padding: 40px;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.certificate p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#certificates h2 {
+  font-size: 1.8em;
+  display: inline-block;
+}
 

@@ -63,6 +63,62 @@
         </div>
     </section>
 
+<section id="certificates">
+  <h2 style="cursor:pointer;" onclick="toggleCertificates()">My Certificates ▼</h2>
+  <div id="certificates-container" style="display:none;">
+    <div class="certificate-grid">
+      <div class="certificate">
+        <embed src="static/certificates/AWS_Academy_Graduate___AWS_Academy_Data_Engineering_Badge20250815-30-xl5rdr.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>AWS Academy Graduate - Data Engineering</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20250815-32-1k90x9.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>AWS Academy Graduate - Cloud Foundations</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/Connecting to a MongoDB Database-thierry-lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>Connecting to a MongoDB Database</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/Getting Started with MongoDB Atlas_thierry_lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>Getting Started with MongoDB Atlas</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/MongoDB and the Document Model_thierry-lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>MongoDB and the Document Model</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/MongoDB CRUD Operations_Insert and Find Documents_thierry_lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>MongoDB CRUD Operations - Insert and Find Documents</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/MongoDB CRUD Operations_Modifying Query Results_thierry_lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>MongoDB CRUD Operations - Modifying Query Results</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/MongoDB CRUD Operations_Replace and Delete Documents_thierry_lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>MongoDB CRUD Operations - Replace and Delete Documents</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/MongoDB Data Modeling Intro_thierry_lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>MongoDB Data Modeling Introduction</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/MongoDB Indexes_thierry_indor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>MongoDB Indexes</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/Self-Managed Server Administration_thierry_lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>Self-Managed Server Administration</p>
+      </div>
+      <div class="certificate">
+        <embed src="static/certificates/The MongoDB Shell_thierry_lindor.pdf" type="application/pdf" width="100%" height="500px" />
+        <p>The MongoDB Shell</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Skills Section -->
 <section class="section bg-white fade-section" id="skills">
@@ -250,6 +306,21 @@
     </script>
     
     <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+    <script>
+function toggleCertificates() {
+  const container = document.getElementById("certificates-container");
+  const title = document.querySelector("#certificates h2");
+  if (container.style.display === "none") {
+    container.style.display = "block";
+    title.innerHTML = "My Certificates ▲";
+  } else {
+    container.style.display = "none";
+    title.innerHTML = "My Certificates ▼";
+  }
+}
+</script>
+
 </body>
 <script>
 function updateTimeAndGreeting() {
