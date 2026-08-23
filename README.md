@@ -1,13 +1,14 @@
-# flask-hello-world
+# Thierry Lindor Portfolio
+Welcome to my professional portfolio!
 
-A modern personal portfolio built with Flask.
+This website showcases my projects, technical skills, certifications, education, and professional experience in Information Technology, Data Analytics, Artificial Intelligence, Software Development, Database Administration, and Cloud Computing.
 
 ## Running Locally
 
 1. **Clone the repository:**
    ```sh
    git clone <your-repo-url>
-   cd flask-hello-world
+   cd tlindor-portfolio
    ```
 
 2. **Create a virtual environment (optional but recommended):**
