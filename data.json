@@ -1,33 +1,61 @@
 {
-  "name": "Alex Shaw",
-  "title": "Full Stack Software Developer",
-  "bio": "Passionate about building scalable web applications and user experiences. Experienced in Python, JavaScript, and cloud technologies.",
-  "skills": ["Flask", "React", "PostgreSQL", "Node.js", "Express", "MongoDB"],
+  "name": "Thierry Lindor",
+"title": "Information Technology Student | Database Administration | Cloud & AI Enthusiast",
+  "bio": "Information Technology student at Metropolitan Community College with concentrations in Database Administration and IT Generalist. Experienced in data center logistics, cloud technologies, and databases. Currently preparing to transfer to the University of Nebraska Omaha to pursue a Bachelor's degree in Artificial Intelligence."
+  "skills": [
+  "Python",
+  "SQL Server",
+  "MongoDB",
+  "Flask",
+  "AWS",
+  "Bootstrap",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Power BI"
+],
   "projects": [
     {
-      "name": "Note Taker",
-      "description": "A web platform for collaborative note-taking.",
-      "url": "https://github.com/yourusername/project-alpha",
-      "tech_stack": ["Flask", "React", "PostgreSQL"],
-      "screenshot": "static/screenshots/project-alpha.png",
-      "demo_url": "https://project-alpha-demo.example.com"
-    },
+  "name": "MERKALOWDA Marketplace Platform",
+  "description": "Designed and developed a scalable marketplace platform integrating e-commerce, business listings, inventory management, and AI-powered business services. The platform is being developed with a strong focus on cybersecurity, scalability, cloud technologies, and user experience.",  "url": "https://github.com/tmaster001/tlindor-portfolio",
+  "tech_stack": [
+    "Python",
+    "Flask",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "JavaScript",
+    "SQLite"
+  ],
+  "screenshot": "static/screenshots/project-alpha.png",
+  "demo_url": "https://tlindor-portfolio.vercel.app"
+},
     {
-      "name": "Social Media Dupe",
-      "description": "A personal project mimicking popular social media sites.",
-      "url": "https://github.com/yourusername/devconnector",
-      "tech_stack": ["Node.js", "Express", "MongoDB", "React"],
-      "screenshot": "static/screenshots/devconnector.png",
-      "demo_url": "https://devconnector-demo.example.com"
-    },
-    {
-      "name": "Web Development Capstone Project",
-      "description": "Final project for web development course.",
-      "url": "https://github.com/yourusername/devconnector",
-      "tech_stack": ["Node.js", "Express", "MongoDB", "React"],
-      "screenshot": "static/screenshots/devconnector.png",
-      "demo_url": "https://devconnector-demo.example.com"
-    }
+      {
+  "name": "Data Center Logistics Dashboard",
+  "description": "A logistics and inventory management project inspired by real-world data center operations. Demonstrates inventory tracking, warehouse organization, operational reporting, and process optimization.",
+  "url": "https://github.com/tmaster001/tlindor-portfolio",
+  "tech_stack": [
+    "Python",
+    "SQL",
+    "Excel",
+    "Power BI"
+  ],
+  "screenshot": "static/screenshots/devconnector.png",
+  "demo_url": "https://tlindor-portfolio.vercel.app"
+},
+      {
+  "name": "Database Administration Portfolio",
+  "description": "A collection of SQL Server and MongoDB projects demonstrating database design, normalization, CRUD operations, indexing, query optimization, and cloud database administration.",
+  "url": "https://github.com/tmaster001/tlindor-portfolio",
+  "tech_stack": [
+    "SQL Server",
+    "MongoDB",
+    "Python"
+  ],
+  "screenshot": "static/screenshots/devconnector.png",
+  "demo_url": "https://tlindor-portfolio.vercel.app"
+}
   ],
   "contact": {
     "email": "thierrylindor001@gmail.com"
