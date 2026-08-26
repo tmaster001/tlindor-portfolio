@@ -227,24 +227,176 @@ body {
 }
 
 
-#certificates {
-  padding: 40px;
+/* PROFESSIONAL CERTIFICATIONS */
+
+#certificates{
+    background:#f8fafc;
+    padding:80px 0;
 }
 
-.certificate-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 20px;
+#certificates .section-title{
+    margin-bottom:50px;
 }
 
-.certificate p {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
+/* CERTIFICATE CARD */
+
+.certificate-card{
+    border:none;
+    border-radius:20px;
+    background:#fff;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:all .35s ease;
 }
 
-#certificates h2 {
-  font-size: 1.8em;
-  display: inline-block;
+.certificate-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
+.certificate-card .card-body{
+    padding:2rem;
+}
+
+/* LOGO */
+
+.cert-logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 20px;
+}
+
+/* TITLES*/
+
+.cert-title{
+    font-size:1.9rem;
+    font-weight:700;
+    color:#222;
+    margin-bottom:6px;
+}
+
+.cert-subtitle{
+    font-size:1.15rem;
+    color:#666;
+    margin-bottom:20px;
+}
+
+/* SKILL PILLS */
+
+.tech-pill{
+    display:inline-block;
+    padding:8px 18px;
+    margin:4px;
+    border-radius:999px;
+    font-size:.85rem;
+    font-weight:600;
+    transition:all .25s ease;
+    user-select:none;
+}
+
+.tech-pill:hover{
+    transform:translateY(-2px);
+}
+
+/* COLORS */
+
+.aws{
+    background:#FFB000;
+    color:#1f2937;
+}
+
+.cloud{
+    background:#2563eb;
+    color:white;
+}
+
+.success{
+    background:#15803d;
+    color:white;
+}
+
+.info{
+    background:#06b6d4;
+    color:white;
+}
+
+.mongodb{
+    background:#16a34a;
+    color:white;
+}
+
+.dark{
+    background:#6b7280;
+    color:white;
+}
+
+.black{
+    background:#111827;
+    color:white;
+}
+
+/* BUTTONS */
+
+.btn-premium{
+    border-radius:12px;
+    padding:12px;
+    font-weight:600;
+    transition:all .30s ease;
+}
+
+.btn-premium:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+}
+
+/* DIVIDER */
+
+.certificate-card hr{
+    margin:25px 0;
+    opacity:.15;
+}
+
+/* COLLAPSE COURSE LIST */
+
+#mongoCourses ul{
+    padding-left:20px;
+    margin-bottom:0;
+}
+
+#mongoCourses li{
+    margin-bottom:8px;
+    color:#555;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:992px){
+
+    .certificate-card{
+        margin-bottom:20px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .cert-title{
+        font-size:1.5rem;
+    }
+
+    .cert-subtitle{
+        font-size:1rem;
+    }
+
+    .cert-logo{
+        width:60px;
+        height:60px;
+    }
+
+    .certificate-card .card-body{
+        padding:1.5rem;
+    }
+
+}
