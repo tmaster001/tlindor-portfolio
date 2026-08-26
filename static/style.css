@@ -283,60 +283,6 @@ body {
     margin-bottom:20px;
 }
 
-/* SKILL PILLS */
-
-.tech-pill{
-    display:inline-block;
-    padding:8px 18px;
-    margin:4px;
-    border-radius:999px;
-    font-size:.85rem;
-    font-weight:600;
-    transition:all .25s ease;
-    user-select:none;
-}
-
-.tech-pill:hover{
-    transform:translateY(-2px);
-}
-
-/* COLORS */
-
-.aws{
-    background:#FFB000;
-    color:#1f2937;
-}
-
-.cloud{
-    background:#2563eb;
-    color:white;
-}
-
-.success{
-    background:#15803d;
-    color:white;
-}
-
-.info{
-    background:#06b6d4;
-    color:white;
-}
-
-.mongodb{
-    background:#16a34a;
-    color:white;
-}
-
-.dark{
-    background:#6b7280;
-    color:white;
-}
-
-.black{
-    background:#111827;
-    color:white;
-}
-
 /* BUTTONS */
 
 .btn-premium{
