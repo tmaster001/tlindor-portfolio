@@ -482,45 +482,270 @@ View Courses
         </div>
     </section>
 
-    <!-- Contact Section -->
-<section class="section fade-section" id="contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <form action="#" method="GET">
-    <div class="mb-3">
-      <label for="name" class="form-label">Name:</label>
-      <input type="text" id="name" name="name" class="form-control" required>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email:</label>
-      <input type="email" id="email" name="email" class="form-control" required>
-    </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message:</label>
-      <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-  </form>
-  <!-- Note: This form is a visual placeholder. Backend submission coming soon! -->
-  </div>
+    <!--  CONTACT  -->
 
-  <div class="container text-center mt-5">
-    <div class="section-title">
-      <i class="bi bi-envelope"></i> Contact
-    </div>
-    <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-      <a href="mailto:{{ profile.contact.email }}" 
-   class="btn btn-outline-primary contact-btn">
-  <i class="bi bi-envelope-fill me-1"></i>Email
+<section id="contact" class="section py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="display-5 fw-bold">
+
+<i class="bi bi-envelope-fill text-primary me-2"></i>
+
+Let's Connect
+
+</h2>
+
+<p class="lead text-muted mx-auto" style="max-width:700px;">
+
+I'm always interested in discussing IT opportunities,
+software development, cloud computing, data analytics,
+and technology projects.
+
+</p>
+
+</div>
+
+<div class="row g-4 align-items-start">
+
+<!-- LEFT COLUMN -->
+
+<div class="col-lg-4">
+
+<!-- Email -->
+
+<div class="card border-0 shadow-sm rounded-4 mb-4">
+
+<div class="card-body p-4">
+
+<h4 class="fw-bold mb-3">
+
+<i class="bi bi-envelope-fill text-primary me-2"></i>
+
+Email
+
+</h4>
+
+<p class="text-muted mb-4">
+
+thierrylindor001@gmail.com
+
+</p>
+
+<a
+href="mailto:thierrylindor001@gmail.com"
+class="btn btn-primary btn-lg rounded-pill w-100">
+
+<i class="bi bi-send-fill me-2"></i>
+
+Send Email
+
 </a>
 
-      {% for social in profile.social %}
-        <a href="{{ social.url }}" target="_blank" class="btn btn-outline-primary contact-btn">
-          <i class="bi {{ social.icon }} me-1"></i>{{ social.name }}
-        </a>
-      {% endfor %}
-    </div>
-  </div>
+</div>
+
+</div>
+
+<!-- LinkedIn -->
+
+<div class="card border-0 shadow-sm rounded-4 mb-4">
+
+<div class="card-body p-4">
+
+<h4 class="fw-bold mb-3">
+
+<i class="bi bi-linkedin text-primary me-2"></i>
+
+LinkedIn
+
+</h4>
+
+<p class="text-muted mb-4">
+
+Connect with me professionally.
+
+</p>
+
+<a
+href="YOUR_LINKEDIN_URL"
+target="_blank"
+class="btn btn-outline-primary btn-lg rounded-pill w-100">
+
+<i class="bi bi-linkedin me-2"></i>
+
+View LinkedIn
+
+</a>
+
+</div>
+
+</div>
+
+<!-- GitHub -->
+
+<div class="card border-0 shadow-sm rounded-4 mb-4">
+
+<div class="card-body p-4">
+
+<h4 class="fw-bold mb-3">
+
+<i class="bi bi-github me-2"></i>
+
+GitHub
+
+</h4>
+
+<p class="text-muted mb-4">
+
+Browse my projects and source code.
+
+</p>
+
+<a
+href="YOUR_GITHUB_URL"
+target="_blank"
+class="btn btn-outline-dark btn-lg rounded-pill w-100">
+
+<i class="bi bi-github me-2"></i>
+
+Visit GitHub
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Resume -->
+
+<div class="card border-0 shadow-sm rounded-4">
+
+<div class="card-body p-4">
+
+<h4 class="fw-bold mb-3">
+
+<i class="bi bi-file-earmark-person text-primary me-2"></i>
+
+Resume
+
+</h4>
+
+<p class="text-muted mb-4">
+
+Download my latest resume.
+
+</p>
+
+<a
+href="{{ url_for('static', filename='Thierry_Lindor_Resume.pdf') }}"
+target="_blank"
+class="btn btn-success btn-lg rounded-pill w-100">
+
+<i class="bi bi-download me-2"></i>
+
+Download Resume
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT COLUMN -->
+
+<div class="col-lg-8">
+
+<div class="card border-0 shadow-sm rounded-4">
+
+<div class="card-body p-5">
+
+<h3 class="fw-bold mb-4">
+
+<i class="bi bi-chat-dots-fill text-primary me-2"></i>
+
+Send Me a Message
+
+</h3>
+
+<form method="POST" action="/contact">
+
+<div class="mb-4">
+
+<label class="form-label fw-semibold">
+
+Name
+
+</label>
+
+<input
+type="text"
+name="name"
+class="form-control form-control-lg rounded-3"
+placeholder="Your name"
+required>
+
+</div>
+
+<div class="mb-4">
+
+<label class="form-label fw-semibold">
+
+Email
+
+</label>
+
+<input
+type="email"
+name="email"
+class="form-control form-control-lg rounded-3"
+placeholder="your@email.com"
+required>
+
+</div>
+
+<div class="mb-4">
+
+<label class="form-label fw-semibold">
+
+Message
+
+</label>
+
+<textarea
+name="message"
+rows="7"
+class="form-control form-control-lg rounded-3"
+placeholder="Write your message..."
+required></textarea>
+
+</div>
+
+<button
+type="submit"
+class="btn btn-primary btn-lg rounded-pill w-100">
+
+<i class="bi bi-send-fill me-2"></i>
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
